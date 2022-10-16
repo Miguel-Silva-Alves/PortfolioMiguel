@@ -47,7 +47,7 @@
             </section>
 
             <!--COMPANYS-->
-            <section>
+            <section id="section-company">
                 <div>
                     <h2>Empresas</h2>
                     <p>Lista de empresas em que trabalhei!</p>
@@ -55,13 +55,13 @@
 
                     <ul class="channel-list">
                         <li>
-                            <a target="_blank" href="https://biotronica.tech/"><img src="assets/companys/bio.jpg" alt="Biotronica"/></a>
+                            <a class="company" name="biotronica" href="#section-company"><img src="assets/companys/bio.jpg" alt="Biotronica"/></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.polarsapiens.com/"><img src="assets/companys/polar.jpeg" alt="PolarSapiens"/></a>
+                            <a class="company" name="polarsapiens" href="#section-company"><img src="assets/companys/polar.jpeg" alt="PolarSapiens"/></a>
                         </li>
                         <li>
-                            <a target="_blank" href="http://www.vetorit.com.br/"><img src="assets/companys/vetor.png" alt="Vetor IT" style="margin-top: 30px;"/></a>
+                            <a class="company" name="vetor" href="#section-company"><img src="assets/companys/vetor.png" alt="Vetor IT" style="margin-top: 30px;"/></a>
                         </li>
                         
                     </ul>
@@ -133,6 +133,32 @@
                     d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
                 </symbol>
               </svg>
+
+              <!-- Modal -->
+            <div class="modal fade" id="mymodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content modal-popout-bg">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Atuação Profissional</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal-company-body">
+
+                        <h2 class="fs-5">Descrição do Trabalho</h2>
+                        <p id="descriptrion"></p>
+
+                        <hr>
+
+                        <h2 class="fs-5">Website da empresa</h2>
+                        <p id="link"></p>
+                        
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Que legal!</button>
+                    </div>
+                </div>
+                </div>
+            </div>
     </main>
 </body>
 </html>

@@ -207,3 +207,8 @@ main section:nth-child(3) {
   transition: transform .3s;
   border-radius: 8px; 
 }
+
+.modal .modal-popout-bg {
+  background-image: url(./assets/modal-bg.png);
+  color: rgb(248, 242, 245);
+}
